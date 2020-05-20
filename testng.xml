@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Test Suite" verbose="2" parallel="classes" thread-count="2">
+<listeners>
+<listener class-name="firstPackage.ListenerExample"></listener>
+</listeners>
+  <test name="Test Cases">
+  <classes>
+  <class name="firstPackage.Listener"></class>
+  </classes>
+  </test> 
+ </suite>
+
+
+
+<!-- <suite name="Test Suite" verbose="2">
+  <test name="Test Cases">
+  
+  <groups>
+  <run>
+  <include name="Moto"></include>
+  <include name="VIVO"></include>
+  </run>
+  </groups> 
+  
+  <classes>
+   <class name="firstPackage.GroupingExample"></class>
+  </classes>
+  </test> 
+</suite> -->
+
+ 
+ <!-- <suite name="Test Suite" verbose="2">
+  <test name="Test Cases">
+  <parameter name="UserName" value="Vedhagiri"></parameter>
+  <parameter name="Password" value="vedhagiri0306" ></parameter>
+  <classes>
+  <class name="firstPackage.ParameterationExample"></class>
+  </classes>
+  </test> 
+ </suite> -->
+ 
+ <!-- <suite name="Test Suite" verbose="2" parallel="classes" thread-count="2">
+  <test name="Test Cases">
+  <parameter name="UserName" value="Vedhagiri"></parameter>
+  <parameter name="Password" value="vedhagiri0306" ></parameter>
+  <classes>
+  <class name="firstPackage.ParallelTesting"></class>
+  </classes>
+  </test> 
+ </suite> -->
+ 
+ <!-- <class name="firstPackage.DependenciesManagement"></class>
+  <class name="firstPackage.DriveACar"></class>
+  <class name="firstPackage.SkipTestCase"></class>
+  <class name="firstPackage.SuiteExample"></class>
+ --> 
+ 
+ 
+  
+  <!-- <classes>
+  <class name="TestCaseName">
+  <methods>
+  <exclude name="TestMethodNameToExclude"/>
+  </methods>
+  </class>
+  </classes> -->
+  
+  
+  <!-- <groups>
+  <run>
+  <exclude name="TestGroupNameToExclude"/>
+  </run>
+  </groups> -->
+  
+  
+  <!-- <methods>
+  <include name=".*smoke*."/>
+  </methods> -->
+ 
